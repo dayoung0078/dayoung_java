@@ -5,6 +5,8 @@ public class Application02 {
         // class 내부안에 무조건 존재해야한다. 안그러면 에러뜬다.
 
         System.out.println(2+2);
+        //시스템이라는 패키지안에 아웃이라는 ????? 물어보기 ?????
+
         System.out.println(2-2);
         System.out.println(2*2);
         System.out.println(2/2);
