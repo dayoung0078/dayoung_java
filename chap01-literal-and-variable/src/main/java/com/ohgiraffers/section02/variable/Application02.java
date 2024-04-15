@@ -7,7 +7,7 @@ public class Application02 {
     *자료형이란/
     * 다양한 값의 형태별로 어느 정도의 크기를 하나의 값으로 취급할 것인지 미리 compiler(번역)와 약속한 키워드이다. (=예약어)
     * 예) 앞으로 사용한 int 자료형은 정수를 4byte만큼 읽어서 하나의 값으로 취급하겠다는 약속이다.,
-    * 이러한 자료형은 기본자료형 (primitive type)과 참조자료형(Referance type)으로 나뉘어진다.
+    * 이러한 자료형은 (기본적으로 제공되는) 기본자료형 (primitive type)과 참조자료형(Referance type)으로 나뉘어진다.
     * 그 중 기본자료형 8가지 부터 살펴본다.
      */
 
@@ -54,6 +54,7 @@ public class Application02 {
 
         //문자열을 취급하는 자료형에 값 대입
         str = "안녕하세요";
+
 
 
 
