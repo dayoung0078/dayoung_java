@@ -21,6 +21,8 @@ public class Application02 {
          * 인자(argument) " 어떤 사물의 원인이 되는 낱낱의 요소나 물질 "
          * */
 
+
+
         int age = 20;
         Application02 app1 = new Application02();
         app1.testMethod(age);

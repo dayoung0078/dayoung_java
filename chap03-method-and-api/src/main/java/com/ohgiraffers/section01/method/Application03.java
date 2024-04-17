@@ -26,6 +26,8 @@ public class Application03 {
     public String myInfo(String name, int age, char gender, String phoneNumber){
         String result = name + age + gender + phoneNumber;
         return result;
+
+
     /*
      * myinfo함수를 만들고
      * 이름 : 문자열
