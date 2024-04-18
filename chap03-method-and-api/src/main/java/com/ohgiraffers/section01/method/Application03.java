@@ -16,8 +16,8 @@ public class Application03 {
 
 
     // 두 수를 더하는 함수
-    // 접근제어자, 반환타입 ,함수명(매개변수) {함수의 몸체spope}
-
+    // 접근제어자(public), static (??정적인 저장공간) ,반환타입(void) ,메서드이름(main) , (매개변수)(String[] args) , {함수의 몸체spope}
+    // 위는 예시를 들어놓은거임.
     public int plus(int x, int y) {
         int result = x + y;
         return result;
