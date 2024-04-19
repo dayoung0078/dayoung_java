@@ -52,17 +52,30 @@ public class A_for {
                     System.out.println(j + "*" + y + "=" + j * y); // 2 * 3 = 6
                 }
         }
+
+/*        for(int i =2; i<=9; i++){
+            for (int x = 0; x<=9; x+=1){
+                if(x!=0){
+                    System.out.println(x+ " * " + i + " = " +x*i);}*/
+    }
+
+/*    for(int i =2; i<=9; i++){
+        for (int x = 0; x<=9; x+=1){
+            if(x!=0){
+                System.out.println(x+ " * " + i + " = " +x*i);*/
+            }
+        /*}
     }
 // 10명의 이름과 나이를 입력 받아 화면에 출력하기
 // 예) 이름 000 나이 20
 
-/*
+*//*
 * 1. 입력받을 공간을 만든다.
 * 2.
 * 4. 10명을 랜덤으로 나오게 하는
-* */
+* *//*
 
-    public void inputInfo(){
+   *//* public void inputInfo(){
     for (int i=1; i<=10; i++){
         Scanner sc = new Scanner(System.in);
         System.out.println("함자가 어떻게 되십니까");
@@ -72,7 +85,7 @@ public class A_for {
         System.out.println("성함:  " + name + "  춘추:  " + age);
     }
 
-    }
+    }*//*
 
-}
+}*/
 

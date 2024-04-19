@@ -5,18 +5,16 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="6cec80ca-fb7c-44bb-9149-90c7a861c83c" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/ogiraffers/section01/conditional/Application02.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/ogiraffers/section01/conditional/D_switch.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/ogiraffers/section02/looping/A_for.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/ogiraffers/section02/looping/Application01.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../chap03-method-and-api/src/main/java/com/ohgiraffers/section01/method/Application01.java" beforeDir="false" afterPath="$PROJECT_DIR$/../chap03-method-and-api/src/main/java/com/ohgiraffers/section01/method/Application01.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../chap03-method-and-api/src/main/java/com/ohgiraffers/section01/method/Application02.java" beforeDir="false" afterPath="$PROJECT_DIR$/../chap03-method-and-api/src/main/java/com/ohgiraffers/section01/method/Application02.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../chap03-method-and-api/src/main/java/com/ohgiraffers/section01/method/Application03.java" beforeDir="false" afterPath="$PROJECT_DIR$/../chap03-method-and-api/src/main/java/com/ohgiraffers/section01/method/Application03.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/gradle.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/gradle.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/ogiraffers/section02/looping/B_while.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/ogiraffers/section02/looping/C_dowhile.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/ogiraffers/section03/branching/A_break.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/ogiraffers/section03/branching/Application01.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../chap05-array/src/main/java/com/ogiraffers/section01/array/application01.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../chap05-array/src/main/java/com/ogiraffers/section01/array/test.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../chap05-array/src/main/java/com/ogiraffers/section01/array/test2.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/ogiraffers/section01/conditional/A_if.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/ogiraffers/section01/conditional/A_if.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/ogiraffers/section01/conditional/Application01.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/ogiraffers/section01/conditional/Application01.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/ogiraffers/section02/looping/A_for.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/ogiraffers/section02/looping/A_for.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/ogiraffers/section02/looping/Application01.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/ogiraffers/section02/looping/Application01.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -27,6 +25,23 @@
     <projectState path="$PROJECT_DIR$">
       <ProjectState />
     </projectState>
+  </component>
+  <component name="ExternalProjectsManager">
+    <system id="GRADLE">
+      <state>
+        <projects_view>
+          <tree_state>
+            <expand>
+              <path>
+                <item name="" type="6a2764b6:ExternalProjectsStructure$RootNode" />
+                <item name="chap04-control-flow" type="f1a62948:ProjectNode" />
+              </path>
+            </expand>
+            <select />
+          </tree_state>
+        </projects_view>
+      </state>
+    </system>
   </component>
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
@@ -50,11 +65,12 @@
   "keyToString": {
     "Application.Application01.executor": "Run",
     "Application.com.ogiraffers.section02.looping.Application01.executor": "Run",
+    "Application.com.ogiraffers.section03.branching.Application01.executor": "Run",
     "Gradle.chap04-control-flow [:Application01.main()].executor": "Run",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "git-widget-placeholder": "main",
     "kotlin-language-version-configured": "true",
-    "last_opened_file_path": "C:/class/01_Java/dayoung_java/chap03-method-and-api",
+    "last_opened_file_path": "C:/class/01_Java/dayoung_java/chap04-control-flow",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.tslint": "true",
     "node.js.selected.package.eslint": "(autodetect)",
@@ -64,7 +80,7 @@
     "vue.rearranger.settings.migration": "true"
   }
 }]]></component>
-  <component name="RunManager" selected="Application.com.ogiraffers.section02.looping.Application01">
+  <component name="RunManager" selected="Application.com.ogiraffers.section03.branching.Application01">
     <configuration name="Application01" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="com.ogiraffers.section01.conditional.Application01" />
       <module name="chap04-control-flow.main" />
@@ -91,8 +107,22 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="com.ogiraffers.section03.branching.Application01" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.ogiraffers.section03.branching.Application01" />
+      <module name="chap04-control-flow.main" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.ogiraffers.section03.branching.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.com.ogiraffers.section03.branching.Application01" />
         <item itemvalue="Application.com.ogiraffers.section02.looping.Application01" />
         <item itemvalue="Application.Application01" />
       </list>
@@ -116,6 +146,8 @@
       <updated>1713345000488</updated>
       <workItem from="1713345001698" duration="59000" />
       <workItem from="1713403497774" duration="24863000" />
+      <workItem from="1713485057268" duration="13709000" />
+      <workItem from="1713501916507" duration="2021000" />
     </task>
     <servers />
   </component>
