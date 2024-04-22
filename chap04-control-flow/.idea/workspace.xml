@@ -5,16 +5,16 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="6cec80ca-fb7c-44bb-9149-90c7a861c83c" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/ogiraffers/section02/looping/B_while.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/ogiraffers/section02/looping/C_dowhile.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/ogiraffers/section03/branching/A_break.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/ogiraffers/section03/branching/Application01.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../chap05-array/src/main/java/com/ogiraffers/section01/array/application01.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../chap05-array/src/main/java/com/ogiraffers/section01/array/test.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../chap05-array/src/main/java/com/ogiraffers/section01/array/test2.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../chap05-array/src/main/java/com/ogiraffers/section02/demensinal/Application01.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../chap05-array/src/main/java/com/ogiraffers/section02/demensinal/badook.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../chap05-array/src/main/java/com/ogiraffers/section02/demensinal/badukteacher.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../chap05-array/src/main/java/com/ogiraffers/section03/copy/Application01.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../chap05-array/src/main/java/com/ogiraffers/section04/sort/Application01.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/ogiraffers/section02/looping/A_for.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/ogiraffers/section02/looping/A_for.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/ogiraffers/section02/looping/Application01.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/ogiraffers/section02/looping/Application01.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/ogiraffers/section02/looping/B_while.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/ogiraffers/section02/looping/B_while.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../chap05-array/.idea/gradle.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../chap05-array/.idea/gradle.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../chap05-array/src/main/java/com/ogiraffers/section01/array/test2.java" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -147,7 +147,9 @@
       <workItem from="1713345001698" duration="59000" />
       <workItem from="1713403497774" duration="24863000" />
       <workItem from="1713485057268" duration="13709000" />
-      <workItem from="1713501916507" duration="2021000" />
+      <workItem from="1713501916507" duration="2023000" />
+      <workItem from="1713745273176" duration="1370000" />
+      <workItem from="1713751842417" duration="1881000" />
     </task>
     <servers />
   </component>

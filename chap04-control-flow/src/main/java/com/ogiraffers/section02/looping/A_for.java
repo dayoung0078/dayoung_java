@@ -6,7 +6,7 @@ public class A_for {
 
     public void testSimpleForStatement(){ // rawr
         /*
-        * [for문 표현식]
+        * [for문 표현식] - 길이의 제한을 안다
         * for(초기식; 조건식; 증감식){
         *  // 조건식이 참인 경우 실행할 구문 == 반복할 구문
         * }

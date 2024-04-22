@@ -5,7 +5,7 @@ public class B_while {
 
     public void testSimpleWhileStatement(){
         /*
-        * [while문 표현식]
+        * [while문 표현식] 길이를 모른다 (
         * 초기식;
         * while(조건식){
         *   조건식을 만족하는 경우 수행할 구문(반복할 구문);
