@@ -2,6 +2,8 @@ package com.ohgirappers.section02.encapsulation.problem1;
 
 public class MonsterClass {
 
+    //클래스 기반 자료형 집합
+
     // 몬스터라는 객체는 다양하게 나올 수 있다.
     //공통점 : 체력이 -면 안된다. 무조건 양수여야한다.
 
