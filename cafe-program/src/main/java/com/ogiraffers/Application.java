@@ -24,31 +24,40 @@ public class Application { //class
             System.out.println("어떤 메뉴를 동작하시겠나요?");
             int input = sc.nextInt();
             sc.nextLine();
-            OrderDTO orderDTO = new OrderDTO();
 
-            switch (input){
-                case 1 : // 등록
+
+            switch (input) {
+                case 1: // 등록
                     System.out.print("주문할 메뉴 이름을 등록해주세요 : ");
-                    orderDTO.setMenuName(sc.nextLine());
+                    String menuName= sc.nextLine();
+
                     System.out.println("수량을 입력해주세요. : ");
                     int quantity = sc.nextInt();
+
                     System.out.println("가격을 입력해주세요 : ");
                     int price = sc.nextInt();
-                    orderDTO.setQuantity(quantity,price);
-                    result = oc.order(orderDTO);
+
+                    OrderDTO orderfianl = new OrderDTO(menuName,quantity,price);
+                    System.out.println(orderfianl.toString());
+
+                    orderfianl.setQuantity(quantity, price);
+                    result = oc.order(orderfianl);
+                    System.out.println("주문하신 내역은  " + menuName + " 이고 " + " 갯수는 " + quantity + " 개 " + " 가격은 " + (price*quantity) + " 원 입니다.");
                     break;
-                case 2 : // 삭제
+                case 2: // 삭제
                     oc.orderDelete();
                     break;
-                case 3 : // 수정
+                case 3: // 수정
                     oc.orderModify();
                     break;
-                case 4 : // 상세조회
+                case 4: // 상세조회
                     oc.orderRead();
-                    System.out.print("주문하신 내용은" );
+                    OrderDTO orderdetail = new OrderDTO(menuName,quantity,price);
+                    System.out.println(orderdetail.toString());
+                    orderdetail.setQuantity(quantity, price);
 
                     break;
-                case 5 : // 전체조회
+                case 5: // 전체조회
                     oc.orderDetail();
                     break;
                 default:

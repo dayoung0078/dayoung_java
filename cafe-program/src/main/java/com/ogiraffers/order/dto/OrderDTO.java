@@ -8,6 +8,12 @@ public class OrderDTO {
 
     private int quantity;
 
+    public OrderDTO(String menuName, int price, int quantity) {
+        this.menuName = menuName;
+        this.price = price;
+        this.quantity = quantity;
+    }
+
     @Override
     public String toString() {
         return "OrderDTO{" +
@@ -25,7 +31,7 @@ public class OrderDTO {
         this.menuName = menuName;
     }
 
-    public int getPrice() {
+    public int getPrice(String menuName) {
         return price;
     }
 
