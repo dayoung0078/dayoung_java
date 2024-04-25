@@ -3,43 +3,66 @@ package com.ogiraffers.order.controller;
 import com.ogiraffers.order.dto.OrderDTO;
 import com.ogiraffers.order.service.OderService;
 
+import java.util.ArrayList;
+import java.util.Arrays;
+
 public class OrderController {
 
 
-    private OderService orderService = new OderService();
+    private final OderService orderService = new OderService();
 
 
-    public String order(OrderDTO OrderDTO) {
-        if (OrderDTO.getMenuName().equals("")){
-            return "메뉴를 정해주세요";
+    public String order(OrderDTO[] orders) {
+        //컨트롤러 계층에서는 각 기능을 수행하기 위한 필수값의 누락이 있는지 검사한다.
+        for (OrderDTO orderDTO : orders) {  // foreach문, orders의 길이만큼 반복)
+            if (orderDTO.getMenuName().equals("")) {  // equals = 괄호안에 있는게 맞으면
+                return "메뉴를 정해주세요";
+            }
 
+            if (orderDTO.getQuantity() <= 0) {
+                return "수량을 입력해주세요";
+
+            }
         }
 
-        if (OrderDTO.getQuantity() <= 0) {
-            return "수량을 입력해주세요";
-        }
-
-        // service 로직으로 넘김
-        String result = orderService.order(OrderDTO);
+        // service 로직으로 넘김  int char flaot double
+        String result = orderService.order(orders);
         return result;
-
-    } //string
-
-    public String orderDelete(){
-        return "주문삭제";
     }
 
-    public String orderModify(){
+    public String orderModify() {
         return "주문수정";
     }
 
-    public String orderRead(){
-        return "주문조회";
+    public String orderDelete(int no) {
+        String result = orderService.orderDelete(no);
+
+        return result;
     }
 
-    public String orderDetail(){
-        return "주문전체조회";
+
+    public String orderRead() {
+        ArrayList orderList = orderService.orderRead();
+        String result = "주문 목록 : " + orderList.toString();
+        return result;
+    }
+
+    public String orderDetail(int no) {
+        if (no < 0) {
+            return "메뉴 번호를 잘못 입력하였습니다.";
+        }
+        OrderDTO orderDTO = orderService.orderDetail(no);
+        if (orderDTO == null) {
+            return "존재하지 않는 주문입니다.";
+        }
+
+        return orderDTO.toString();
+
     }
 
 }
+
+
+
+
 
