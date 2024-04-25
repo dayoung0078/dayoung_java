@@ -1,15 +1,14 @@
 package com.ogiraffers.order.controller;
 
 import com.ogiraffers.order.dto.OrderDTO;
-import com.ogiraffers.order.service.OderService;
+import com.ogiraffers.order.service.OrderService;
 
 import java.util.ArrayList;
-import java.util.Arrays;
 
 public class OrderController {
 
 
-    private final OderService orderService = new OderService();
+    private final OrderService orderService = new OrderService();
 
 
     public String order(OrderDTO[] orders) {

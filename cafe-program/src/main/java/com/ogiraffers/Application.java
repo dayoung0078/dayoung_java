@@ -3,18 +3,19 @@ package com.ogiraffers;
 import com.ogiraffers.order.controller.OrderController;
 import com.ogiraffers.order.dto.OrderDTO;
 
+import java.util.ArrayList;
 import java.util.Scanner;
 
 public class Application { //class
 
-    public static void main(String[] args) { //main
+    public static void main(String[] args) { //main이 들어있는 ap이 메인인가?
         Scanner sc = new Scanner(System.in);
         OrderController oc = new OrderController();
-        boolean order = true;
-        String result = "";
+        boolean order = true; //기본데이터유형 변수의 초기값을 true로 설정
+        String result = ""; //string 클래스의 result 변수는 비어있는 값 = ""
 
 
-        while (order){
+        while (order){ //while 반복문의 상단에서 지정한 order 라는 변수이름
 
             System.out.println("1. 주문 등록");
             System.out.println("2. 주문 삭제");
@@ -26,21 +27,23 @@ public class Application { //class
             sc.nextLine();
 
 
-            switch (input) {
+            switch (input) { // "input"은 프로그램이 처리할 데이터나 정보를 받는 데 사용되는 용어
                 case 1: // 등록
-                    System.out.println("몇 개의 음료를 주문하시겠나요?");
+                    System.out.println("몇 번의 주문을 하시겠나요?");
                     int cnt = sc.nextInt();
                     sc.nextLine();
                     OrderDTO[] orders = new OrderDTO[cnt];
                     for (int i = 0; i < orders.length; i++) {
                         System.out.println("주문할 메뉴 이름을 등록해주세요 : ");
                         String menuName = sc.nextLine();
+                        sc.nextLine();
 
                         System.out.println("수량을 입력해주세요. : ");
                         int quantity = sc.nextInt();
 
                         System.out.println("가격을 입력해주세요 : ");
                         int price = sc.nextInt();
+
                         orders[i] = new OrderDTO(menuName, quantity, price);
                     }
                     result = oc.order(orders);
@@ -67,6 +70,10 @@ public class Application { //class
                     break;
 
                 case 5: // 전체조회
+                    for(String orderResult : result.split(" ")){
+                        System.out.println(orderResult);
+                    }
+                    //전체조회 알아보기...
                     result = oc.orderRead();
                     break;
 

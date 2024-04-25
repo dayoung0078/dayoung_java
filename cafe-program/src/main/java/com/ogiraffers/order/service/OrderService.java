@@ -1,14 +1,13 @@
 package com.ogiraffers.order.service;
 
-import com.ogiraffers.order.dao.OderRepository;
+import com.ogiraffers.order.dao.OrderRepository;
 import com.ogiraffers.order.dto.OrderDTO;
 
 import java.util.ArrayList;
-import java.util.Arrays;
 
-public class OderService {
+public class OrderService {
 
-    private final OderRepository orderRepository = new OderRepository();
+    private final OrderRepository orderRepository = new OrderRepository();
     // 서비스 계층
     // 비즈니스 로직 수행 및 데이터 베이스의 대한 리소스를 관리한다.
 

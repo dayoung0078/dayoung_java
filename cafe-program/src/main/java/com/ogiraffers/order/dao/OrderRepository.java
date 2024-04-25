@@ -5,9 +5,8 @@ import com.ogiraffers.order.dto.OrderDTO;
 
 
 import java.util.ArrayList;
-import java.util.Arrays;
 
-public class OderRepository {
+public class OrderRepository {
 
     private final OrderDB orderDB = OrderDB.getInstance();
 
