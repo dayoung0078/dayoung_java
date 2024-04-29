@@ -31,12 +31,12 @@ public class Application { //class
                 case 1: // 등록
                     System.out.println("몇 번의 주문을 하시겠나요?");
                     int cnt = sc.nextInt();
-                    sc.nextLine();
+                    sc.nextLine(); //정수형이나 문자형에만 적용됨.     // 5\n      \n <-엔터 역할 (
                     OrderDTO[] orders = new OrderDTO[cnt];
                     for (int i = 0; i < orders.length; i++) {
                         System.out.println("주문할 메뉴 이름을 등록해주세요 : ");
                         String menuName = sc.nextLine();
-                        sc.nextLine();
+
 
                         System.out.println("수량을 입력해주세요. : ");
                         int quantity = sc.nextInt();
@@ -70,10 +70,6 @@ public class Application { //class
                     break;
 
                 case 5: // 전체조회
-                    for(String orderResult : result.split(" ")){
-                        System.out.println(orderResult);
-                    }
-                    //전체조회 알아보기...
                     result = oc.orderRead();
                     break;
 
