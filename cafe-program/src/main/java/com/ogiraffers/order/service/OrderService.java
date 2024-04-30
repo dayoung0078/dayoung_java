@@ -15,16 +15,18 @@ public class OrderService {
 //        if(!orderDTO.getMenuName().equals("아메리카노")){
 //            return "주문 실패";
 //        }
-        for (OrderDTO orderDTO:orders) {
-        if(orderDTO.getPrice() <= 0) {
+        for (OrderDTO orderDTO:orders) { // 또 foreach배열 ..ㅠㅠ ㅇㅇ
+        if(orderDTO.getPrice() <= 0) { // get 가격을 꺼내옴
             return "장난하냐? 집에서 맥심골드나 먹어라";
         }
     }
 
 
-        String result = orderRepository.order(orders);
-
+        String result = orderRepository.order(orders); // string을 써서 레파지토리도 문자열형이겠구나 유추가능
+        // result = 레파지토리의 리턴값 (등록실패 or 등록완료가 반환) 이거맞지?
         return result;
+//        return orderRepository.order(orders); <- 한줄로 쓰면 이렇게 됨 ㅇㅋㅇㅋ
+
 
     }
 
@@ -41,8 +43,9 @@ public class OrderService {
 
     }
 
-    public String orderDelete(int no) {
-        String result = orderRepository.orderDelete(no);
+    public String orderDelete(int no) { // 이걸찾아온거잖아 그치?
+        String result = orderRepository.orderDelete(no); // 문자열형 결과값
+        // 오더레파지토리의 오더딜리트메소드 (매개변수 no)값을 전달한다.
         return result;
     }
 }

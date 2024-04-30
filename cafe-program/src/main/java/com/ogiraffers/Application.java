@@ -10,9 +10,10 @@ public class Application { //class
 
     public static void main(String[] args) { //main이 들어있는 ap이 메인인가?
         Scanner sc = new Scanner(System.in);
-        OrderController oc = new OrderController();
+        OrderController oc = new OrderController();//객체생성자의 메서드가 없어서 빈칸인것임
         boolean order = true; //기본데이터유형 변수의 초기값을 true로 설정
         String result = ""; //string 클래스의 result 변수는 비어있는 값 = ""
+
 
 
         while (order){ //while 반복문의 상단에서 지정한 order 라는 변수이름
@@ -44,10 +45,13 @@ public class Application { //class
                         System.out.println("가격을 입력해주세요 : ");
                         int price = sc.nextInt();
 
-                        orders[i] = new OrderDTO(menuName, quantity, price);
+                        orders[i] = new OrderDTO(menuName, quantity, price); //new 객체생성키워드
+                        //
                     }
-                    result = oc.order(orders);
-                    break;
+                    result = oc.order(orders);  // 컨트롤러로 넘기는 부분 order 메소드 사용, 매개변수 orders
+                    break; // 이거 하나 하려고 이 짓을..? 이 공정을..? 컴퓨터 진짜 바보구나..?....
+                // 이해도 가고 어이도 없고 빡치고 컴퓨터 이새끼 뭐하는놈인지 싶고 고철이네 싶다
+                // 고마워 ㅠㅠㅠㅠㅠㅠㅠㅠㅠ
 
 
                 case 2: // 삭제

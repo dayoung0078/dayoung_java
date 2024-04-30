@@ -21,8 +21,8 @@ public class OrderDTO {
     public void setPrice(int price) {
         this.price = price;
     }
-
-    public int getQuantity() {
+                //이름일뿐
+    public int getQuantity() { // quantity의 자료형이 숫자형이여야 한다.
         return quantity;
     }
 
@@ -30,7 +30,7 @@ public class OrderDTO {
         this.quantity = quantity;
     }
 
-    public OrderDTO(String menuName, int price, int quantity) {
+    public OrderDTO(String menuName, int price, int quantity) { // constructor 생성자메서드
         this.menuName = menuName;
         this.price = quantity * price;
         this.quantity = quantity;
